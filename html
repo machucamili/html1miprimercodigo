@@ -1,0 +1,42 @@
+<html>
+    <head>
+<title>Mi primer código </title>
+<style>
+    body {background-color: rgba(250, 162, 90, 0.979);}
+    h1 {color:rgba(177, 66, 15, 0.774) ;}
+    p { font-size: 25px;
+    color: brown;
+    }
+</style>
+    </head>
+    <body>}
+        <h1>Calculá tu peso en la Luna </h1>
+        <p>Conoce cual es tu peso en la Luna </p>
+        <script>
+            alert( "Esto esta funcionando con Java Script");
+            prompt( "ingrese su peso ");
+            var usuario = prompt (" ¿Cuál es tu peso?")
+            var lugar = parseInt(prompt (" ¿Que lugar elige? 1 para la Luna, 2 para Jupiter");
+            var gTierra = 9.8;
+            var gLuna = 1.6;
+            var gJupiter = 24.8;
+            var peso = parseInt (usuario);
+            var peso_final ;
+            var nombre; 
+
+            if (lugar == 1) {
+            var peso_final = peso * gLuna / gTierra;
+            nombre = " Luna";
+            } 
+            else if (lugar == 2) {
+                peso_final = peso * gJupiter / gTierra;
+                nombre = "Jupiter";
+            } 
+            else {
+                peso_final = 1000000;
+                nombre = "octopus";
+            }
+            var peso_final = parseInt(peso_final);
+            document.write (" Tu peso en " + nombre + "es de"  + peso_final  + "kilogramos");
+        </script> 
+    </body>
